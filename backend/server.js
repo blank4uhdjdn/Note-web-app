@@ -1,10 +1,10 @@
+const path=require('path')
 const express =require("express")
 const app =express()    
 const dontenv =require("dotenv")
 const cookieParser = require("cookie-parser")
 const connectToMOngo = require("./db/connecToMongo")
 dontenv.config()
-const path=require('path')
 
 const Port=process.env.PORT || 8000
 
@@ -26,7 +26,7 @@ app.use("/api/otp",otproutes)
 app.use(express.static(path.join(__dirname, "../frontend/dist")));
 
 
-app.get("*", (req, res) => {
+app.get(/.*/, (req, res) => {
   res.sendFile(path.join(__dirname, "../frontend/dist/index.html"));
 });
 
