@@ -1,0 +1,27 @@
+{
+  "name": "highway-delite",
+  "version": "1.0.0",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon backend/server.js",
+    "start": "  node  backend/server.js",
+    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend"
+  },
+  "author": "sajidansari",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "axios": "^1.11.0",
+    "cookie-parser": "^1.4.7",
+    "cookieparser": "^0.1.0",
+    "dotenv": "^17.2.1",
+    "dotevn": "^17.2.1",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.18.0",
+    "nodemailer": "^7.0.6",
+    "nodemon": "^3.1.10",
+    "path": "^0.12.7"
+  }
+}
